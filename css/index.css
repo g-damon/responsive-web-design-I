@@ -1,3 +1,717 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	font-size: 10px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*header and nav*/
+
+header {
+	margin-top: 2em;
+	width: 100%;
+	display: flex;
+	justify-content: stretch;
+	align-items: center;
+}
+
+nav {
+	width: 70%;
+	line-height: 2.5em;
+	display: flex;
+	justify-content: space-between;
+}
+nav a {
+	font-size: 1.4em;
+	width: 15%;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus  {
+	font-size: 1.6em;
+	width: 15%;
+	text-decoration: none;
+}
+
+.logo-container {
+	margin: 0 auto;
+	width: 28%;
+}
+
+.logo {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+/*font*/
+
+h1 {
+	font-size: 8em;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.4em;
+}
+
+p, li {
+	font-size: 1.3em;
+	margin-left: 0.7em;
+}
+
+/* sections */
+
+section {
+	margin: 3em auto;
+}
+
+.brdr-bttm {
+	padding-bottom: 6em;
+	border-bottom: #000000 2px solid;
+	margin-bottom: 2.5em;
+}
+
+.vertical {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.horizontal {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
 
+.horizontally {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+
+.hundo {
+	width: 100%;
+	display: flex;
+	justify-content: stretch;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+	/*positioning*/
+ul {
+	margin: 0.7em auto;
+	list-style-type: square;
+}
+
+li {
+	margin: 0.7em auto;
+	font-size: 1.5em;
+}
+
+.inline-block {
+	width: 48%;
+
+}
+
+.inline-p {
+	font-size: 1.6em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.vert-space{
+display: flex;
+align-items: stretch;
+}
+
+.thirds {
+	width: 33%;
+	min-width: 33%;
+	max-width: 33%;
+}
+
+p.center {
+	text-align: center;
+}
+
+.address {
+	margin:1em;
+}
+
+.gray-box {
+width: 40%;
+background-color: #cccccc;
+border: 1px #222222 solid;
+margin: 1em ;
+}
+
+.gray-box h4 {
+	margin: 1em;
+}
+
+.gray-box p {
+	margin: 1em;
+}
+
+.gray-box .grey-btn {
+	margin: 1em;
+}
+
+/*buttons and inputs*/
+
+.clear-btn {
+	background-color: transparent;
+	border: grey 1px solid;
+	text-align: center;
+	margin: 0 auto;
+}
+/* images */
+.round-img {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.middle-img {
+	margin: 2em auto;
+}
+
+/* footer */
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.copy {
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+
+
+/*700 px breakpoint*/
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    /*header and nav*/
+
+    header {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        width: 90%;
+        line-height: 2.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a {
+        font-size: 1.4em;
+        width: 15%;
+        text-decoration: none;
+    }
+
+    nav a:hover, nav a:focus  {
+        font-size: 1.6em;
+        width: 15%;
+        text-decoration: none;
+    }
+
+    .logo-container {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 1em auto;
+        max-width: 60%;
+    }
+
+    /*font*/
+
+    h1 {
+        font-size: 5em;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h6 {
+        font-size: 1.4em;
+    }
+
+    p, li {
+        font-size: 1.3em;
+        margin-left: 7px;
+    }
+
+    /* sections */
+
+    section {
+        margin: 2em auto;
+    }
+
+    .brdr-bttm {
+        padding-bottom: 5em;
+        border-bottom: #000000 2px solid;
+        margin-bottom: 2.5em;
+    }
+
+    .vertical {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .horizontal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .horizontally {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+
+    .hundo {
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        /*positioning*/
+    ul {
+        margin: 7px auto;
+        list-style-type: square;
+    }
+
+    li {
+        margin: 7px auto;
+        font-size: 1.5em;
+    }
+
+    .inline-block {
+        width: 48%;
+
+    }
+
+    .inline-p {
+        font-size: 1.6em;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .vert-space{
+    display: flex;
+    align-items: stretch;
+    }
+
+    .thirds {
+        width: 33%;
+        min-width: 33%;
+        max-width: 33%;
+    }
+
+    .address {
+        margin:10px;
+    }
+
+    .gray-box {
+    width: 40%;
+    margin: 10px;
+    }
+
+    .gray-box h4 {
+        margin: 1em;
+    }
+
+    .gray-box p {
+        margin: 1em;
+    }
+
+    .gray-box .grey-btn {
+        margin: 1em;
+    }
+
+    .center-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*buttons and inputs*/
+
+    .clear-btn {
+        background-color: transparent;
+        border: grey 1px solid;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* images */
+    .round-img {
+        display: none;
+    }
+
+    .middle-img {
+        margin: 2em auto;
+        width: 100%;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 4em;
+        margin-top: 2em;
+    }
+
+}
+
+/*500 px breakpoint*/
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    /*header and nav*/
+
+    header {
+        margin-top: 1em;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    nav {
+        width: 100%;
+        line-height: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px grey solid;
+    }
+    nav a {
+        font-size: 1.4em;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.5em 0;
+        border-top: 1px grey solid;
+    }
+
+    nav a:hover, nav a:focus  {
+        font-size: 1.6em;
+        width: 100%;
+        text-decoration: none;
+        border-top: 1px grey solid;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 0.6em auto 0.8em auto;
+        max-width: 30%;
+    }
+
+    /*font*/
+
+    h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h6 {
+        font-size: 1.4em;
+    }
+
+    p, li {
+        font-size: 1.3em;
+        margin-left: 0.7em;
+    }
+
+    /* sections */
+
+    section {
+        margin: 1em auto;
+    }
+
+    .brdr-bttm {
+        padding-bottom: 2em;
+        border-bottom: #000000 2px solid;
+        margin-bottom: 1.5em;
+    }
+
+    .vertical {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .horizontal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .horizontally {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+
+    .hundo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        /*positioning*/
+    ul {
+        margin: 0.7em auto;
+        list-style-type: square;
+    }
+
+    li {
+        margin: 0.3em auto;
+        font-size: 1.5em;
+    }
+
+    .inline-block {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .inline-block p {
+        margin: 0 0 1em 0 ;
+    }
+
+    .inline-block h4 {
+        margin: 0 0 0.4em 0;
+    }
+
+    .inline-p {
+        font-size: 1.6em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .vert-space{
+    display: flex;
+    align-items: stretch;
+    }
+
+    .thirds {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 1em;
+    }
+
+    .thirds p {
+        margin: 0 0 1em 0 ;
+    }
+
+    .thirds h4 {
+        margin: 0 0 0.4em 0;
+    }
+
+    .address {
+        margin:1em;
+    }
+
+    .gray-box {
+    width: 100%;
+    margin: 0.3em;
+    }
+
+    .gray-box h4 {
+        margin: 1em 0 0 0;
+    }
+
+    .gray-box p {
+        margin: 0 0 1em 0;
+    }
+
+    .gray-box .grey-btn {
+        margin: 0.4em;
+    }
+
+    /*buttons and inputs*/
+
+    .clear-btn {
+        background-color: transparent;
+        border: grey 1px solid;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 0.5em;
+    }
+
+    /* images */
+    .round-img {
+        display: none;
+    }
+
+    .middle-img {
+        width: 96%;
+        margin: 1em auto;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+}
