@@ -256,8 +256,13 @@ margin: 1em ;
     margin: 0 auto;
     max-width: 500px;
 }
+.services-info-img {
+    width: 80%;
+    max-width: 420px;
+    margin: 0 auto;
+}
 
-.middle-img {
+.middle-img, .services-header-img {
 	margin: 2em auto;
 }
 
@@ -464,7 +469,13 @@ footer {
         display: none;
     }
 
-    .middle-img {
+    .services-info-img {
+        width:80%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .middle-img, .services-header-img {
         margin: 2em auto;
         width: 100%;
     }
@@ -558,7 +569,7 @@ footer {
 
     p, li {
         font-size: 1.3em;
-        margin-left: 0.7em;
+        margin-left: 0.9em;
     }
 
     /* sections */
@@ -609,13 +620,16 @@ footer {
     }
 
         /*positioning*/
+
+
     ul {
         margin: 0.7em auto;
+        padding-left: 1em;
         list-style-type: square;
     }
 
     li {
-        margin: 0.3em auto;
+        margin: 0.3em;
         font-size: 1.5em;
     }
 
@@ -651,11 +665,11 @@ footer {
     }
 
     .thirds p {
-        margin: 0 0 1em 0 ;
+        margin: 0 0.4em 1em 0 ;
     }
 
     .thirds h4 {
-        margin: 0 0 0.4em 0;
+        margin: 0 0.5em 0.4em 0;
     }
 
     .address {
@@ -664,19 +678,20 @@ footer {
 
     .gray-box {
     width: 100%;
-    margin: 0.3em;
+    margin: 0.5em;
     }
 
     .gray-box h4 {
-        margin: 1em 0 0 0;
+        padding-left: 1em;
+        margin: 1em 1em 00 ;
     }
 
     .gray-box p {
-        margin: 0 0 1em 0;
+        margin: 0.7em 0.5em 1em 0.5em;
     }
 
     .gray-box .grey-btn {
-        margin: 0.4em;
+        margin: 1em;
     }
 
     /*buttons and inputs*/
@@ -694,9 +709,13 @@ footer {
         display: none;
     }
 
-    .middle-img {
+    .middle-img, .services-header-img {
         width: 96%;
         margin: 1em auto;
+    }
+
+    .services-info-img {
+        display: none;
     }
 
     /* footer */
